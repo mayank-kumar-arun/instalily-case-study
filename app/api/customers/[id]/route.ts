@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET(
   req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: { id: any } }
 ) {
     const {id} = await params
   const customer = mockCustomers.find((c) => c.id === id);
