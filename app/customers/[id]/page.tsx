@@ -5,7 +5,7 @@ import EmailDraft from "@/components/customers/EmailDraft";
 export default async function CustomerPage({
   params,
 }: {
-  params: { id: string };
+  params: { id: any };
 }) {
   const { id } = await params;
   const baseUrl = process.env.NEXTAUTH_URL || "http://localhost:3000";
